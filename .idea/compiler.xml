@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="str-consumer" />
+        <module name="payment-consumer" />
         <module name="str-producer" />
         <module name="payment-service" />
       </profile>
@@ -15,6 +16,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="payment-consumer" options="-parameters" />
       <module name="payment-service" options="-parameters" />
       <module name="str-consumer" options="-parameters" />
       <module name="str-producer" options="-parameters" />
